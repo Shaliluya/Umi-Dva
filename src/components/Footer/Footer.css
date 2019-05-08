@@ -1,0 +1,22 @@
+
+
+.footer {
+  background-color: #4b566a;
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 3rem 0 2rem 0;
+  height: 100px;
+}
+
+.legalInformation {
+  text-align: right;
+}
+
+.legalInformation a {
+  color: #ffffff;
+}
+
+.legalInformation a:focus,
+.legalInformation a:hover {
+  color: #c2e4ff;
+}

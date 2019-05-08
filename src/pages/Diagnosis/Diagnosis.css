@@ -1,0 +1,88 @@
+
+.boxWrap {
+  background-color: #ffffff;
+  box-shadow: 0 1px 7px rgba(0,0,0,.05);
+  border: 1px solid rgba(0,0,0,0.125);
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.boxWrap .heading {
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.boxWrap hr {
+  border-color: #43b0ff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.boxItemsList {
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.boxItemsList .boxItem {
+  background-color: #ecf7ff;
+  color: #075b9a;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.pacientDetailWrap {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.pacientDetailWrap .pacientDetailItemWrap .detailDescription {
+  font-weight: 600;
+}
+
+.pacientDetailWrap .pacientDetailItemWrap .detailLabel {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.archiveDiagnosticDate {
+  border-top: 1px solid #cccccc;
+  display: flex;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.archiveDiagnosticDate .detailDescription {
+  font-weight: 400;
+  margin-right: 1rem;
+}
+
+.diseasesTableWrap td {
+  font-size: 1.3rem;
+}
+
+.diagnosticNavigation {
+  display: flex;
+  line-height: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.diagnosticNavigation button {
+  align-items: center;
+  color: #7fc0af;
+  display: flex;
+  margin-bottom: 0;
+  padding: 0 1rem;
+}

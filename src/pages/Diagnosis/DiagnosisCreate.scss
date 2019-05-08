@@ -1,0 +1,329 @@
+.diseasesListWrap {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.accuracyDegreeListWrap {
+  min-height: 20rem;
+}
+
+.accuracyDegreeListWrap {
+  .diseaseItem {
+    margin: 1rem 0 0 0;
+  }
+}
+
+.assessmentsWrap {
+  display: flex;
+  overflow-y: visible;
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 500px;
+  padding: 0 0 4rem 0;
+  width: 100%;
+}
+
+.assessmentsWrap {
+  .assessmentItemListWrap {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-width: 170px;
+    width: 170px;
+  }
+}
+
+.assessmentsWrap {
+  .searchInput {
+    font-size: 1.3rem;
+  }
+}
+
+.assessmentsWrap {
+  .assessmentItemsListWrap {
+    .assessmentItem {
+      background-color: #e5f1ee;
+      color: #184c3f;
+      display: block;
+      line-height: 2.6rem;
+      margin: 0 0 0.5rem 0;
+      position: relative;
+      padding: 0 3rem 0 2rem;
+      text-align: left;
+      height: 2.6rem;
+      width: 100%;
+    }
+  }
+}
+
+.assessmentsWrap {
+  .assessmentItemsListWrap {
+    .assessmentItem {
+      .addSelectedCuratedAssessment {
+        background-color: #afbfce;
+        color: #3d4852;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        margin: 0;
+        padding: 0.2rem;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        height: 26px;
+        width: 26px;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.assessmentsWrap
+  .assessmentItemsListWrap
+  .assessmentItem
+  .addSelectedCuratedAssessment {
+  &:focus,
+  &:hover {
+    background-color: #ff4000;
+    color: #ffffff;
+  }
+}
+
+.assessmentsWrap
+  .assessmentItemsListWrap
+  .assessmentItem.assessmentItemSelected {
+  background-color: #184c3f;
+  color: #9ec3ba;
+}
+
+.assessmentsWrap
+  .assessmentItemsListWrap
+  .assessmentItem.assessmentSelectedItem {
+  background-color: #0f362d;
+  color: #9ec3ba;
+}
+
+.assessmentsWrap .assessmentItemsListWrap .assessmentItem:hover {
+  background-color: #9ec3ba;
+  color: #ffffff;
+}
+
+.addSubjectiveAssessment {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.newDiagnosisPacientDetailsWrap {
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  padding: 1rem;
+}
+
+.newDiagnosisPacientDetailsWrap .newDiagnosisPacientDetailsHeading {
+  border-top: 1px solid #dbdbdb;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+
+.prognosticSelectedDiseasesList {
+  background-color: #ffffff;
+  min-height: 200px;
+  padding: 1rem 1rem 5rem 1rem;
+  position: relative;
+}
+
+.prognosticSelectedDiseasesList::after {
+  bottom: 0;
+  content: "Drop inside this area";
+  color: #a7a7a7;
+  display: block;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1;
+  left: 0;
+  position: absolute;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.prognosticDiseaseItemSeleted {
+  background-color: #ffffff;
+  border-bottom: 1px solid #afbfce;
+  border-radius: 0;
+  color: #3d4852;
+  cursor: pointer;
+  padding: 1rem 2rem 1rem 1rem;
+  text-align: left;
+  overflow: hidden;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.prognosticDiseaseItemSeleted:focus,
+.prognosticDiseaseItemSeleted:hover {
+  background-color: #d5dde6;
+}
+
+.prognosticDiseaseItemSeleted:last-child {
+  border-bottom: none;
+}
+
+.diseaseItem .removePrognosticSelectedDisease {
+  color: #3d4852;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: center;
+  margin: 0;
+  padding: 0.2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 33px;
+  width: 22px;
+  z-index: 1;
+}
+
+.diseaseItem .removePrognosticSelectedDisease:focus,
+.diseaseItem .removePrognosticSelectedDisease:hover {
+  color: #ff4000;
+}
+
+.smartGoalSettingsItemsWrap {
+  margin-bottom: 4rem;
+}
+
+.smartGoalSettingsColumnHeadingWrap {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+}
+
+.smartGoalSettingsItemsListHeadings .smartGoalSettingsColumnHeading {
+  border-bottom: 1px solid #4b4b4b;
+  color: #4b4b4b;
+  margin-bottom: 0;
+}
+
+.smartGoalSettingsItemsListHeadings .smartGoalSettingsColumnDescription {
+  color: #a7a7a7;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.smartGoalSettingsItem .smartGoalSettingsInputWrap {
+  margin-top: 0.5rem;
+}
+
+.smartGoalSettingsItem .smartGoalSettingsInputWrap input {
+  border-radius: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.addSmartGoalSettingsWrap {
+  border-top: 1px solid #a7a7a7;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.addSmartGoalSettingsDescription p {
+  color: #a7a7a7;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.addSmartGoalSettingsWrap .addSmartGoalSettings {
+  color: #ff4000;
+}
+
+.patientConsentInformationWrap {
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.patientConsentInformationWrap .heading {
+  font-weight: 600;
+}
+
+.patientConsentInformationWrap .paragraph {
+  color: #a7a7a7;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.patientConsentInformationWrap .patientConsentConfirmation {
+  border-top: 1px solid #9ec3ba;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.patientConsentInformationWrap .patientConsentConfirmation input {
+  margin-left: 1rem;
+}
+
+.optionToggleContainerWrap {
+  display: flex;
+  overflow-y: visible;
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 500px;
+  padding: 0 0 4rem 0;
+  width: 100%;
+}
+
+.optionToggleListContainer {
+  display: inline-block;
+  padding-right: 1rem;
+  min-width: 170px;
+  width: 170px;
+}
+
+.optionToggleListInnerContainer .heading {
+  color: #0d2b25;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  white-space: initial;
+}
+
+.optionToggleListContainer .buttonOptionToggle {
+  background-color: #e5f1ee;
+  color: #184c3f;
+  display: block;
+  line-height: 2.6rem;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+  padding: 0 3rem 0 2rem;
+  height: 2.6rem;
+  width: 100%;
+}
+
+.optionToggleListContainer .buttonOptionToggle.assessmentItemSelected {
+  background-color: #184c3f;
+  color: #9ec3ba;
+}
+
+.optionToggleListContainer .buttonOptionToggle:hover {
+  background-color: #9ec3ba;
+  color: #ffffff;
+}

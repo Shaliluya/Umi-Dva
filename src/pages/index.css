@@ -1,0 +1,505 @@
+
+.normal {
+  font-family: Georgia, sans-serif;
+  margin-top: 4em;
+  text-align: center;
+}
+
+.welcome {
+  height: 328px;
+  background: url(../assets/yay.jpg) no-repeat center 0;
+  background-size: 388px 328px;
+}
+
+.list {
+  font-size: 1.2em;
+  margin-top: 1.8em;
+  list-style: none;
+  line-height: 1.5em;
+}
+
+.list code {
+  background: #f7f7f7;
+}
+
+/* roboto-100 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"),
+    url("../fonts/google/roboto/roboto-v18-latin-100.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/google/roboto/roboto-v18-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/google/roboto/roboto-v18-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/google/roboto/roboto-v18-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/google/roboto/roboto-v18-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/google/roboto/roboto-v18-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-300 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat Light"), local("Montserrat-Light"),
+    url("../fonts/google/montserrat/montserrat-v12-latin-300.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/google/montserrat/montserrat-v12-latin-300.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/google/montserrat/montserrat-v12-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/google/montserrat/montserrat-v12-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url("../fonts/google/montserrat/montserrat-v12-latin-500.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/google/montserrat/montserrat-v12-latin-500.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/google/montserrat/montserrat-v12-latin-700.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/google/montserrat/montserrat-v12-latin-700.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url("../fonts/google/material-icons/MaterialIcons-Regular.woff2")
+      format("woff2"),
+    url("../fonts/google/material-icons/MaterialIcons-Regular.woff")
+      format("woff");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  margin-bottom: -100px;
+  min-height: 100%;
+  position: relative;
+}
+
+.push {
+  height: 100px;
+}
+
+h1 {
+  color: #6b7689;
+  font-size: 3.6rem;
+}
+
+h1 strong {
+  color: #4b566a;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.displayFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pt6 {
+  padding-top: 6rem;
+}
+
+.pb6 {
+  padding-bottom: 6rem;
+}
+
+.pt8 {
+  padding-top: 8rem;
+}
+
+.mt4 {
+  margin-top: 4rem;
+}
+
+.mt6 {
+  margin-top: 6rem;
+}
+
+.mb6 {
+  margin-bottom: 6rem;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textTransformUppercase {
+  text-transform: uppercase;
+}
+
+.headingGroup {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.headingGroup .heading {
+  color: #6b7689;
+  font-size: 2.4rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+label,
+legend {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+  background-color: #ffffff;
+  border-color: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #096c9a;
+}
+
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border-radius: 0;
+}
+
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: #ff4000;
+  border: 0.1rem solid #da3600;
+  font-weight: 400;
+  line-height: 3rem;
+  padding: 0 2rem;
+  transition: all 0.2s ease-in-out;
+  height: 3rem;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+  font-size: 1.4rem;
+  height: 3rem;
+}
+
+.buttonCancel {
+  background-color: #cc0000;
+  border: 0.1rem solid #cc0000;
+}
+
+.button-100 {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+hr {
+  border-top: 0.1rem solid #dadada;
+}
+
+.formHorizontal {
+  display: flex;
+}
+
+.formHorizontal .formGroup {
+  width: 80%;
+}
+
+.formHorizontal .formControlGroup {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  width: 20%;
+}
+
+.formVertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.formVertical .formControlGroup .formControlAdd {
+  width: 100%;
+}
+
+.formGroupIcon {
+  position: relative;
+}
+
+.formGroupIcon input {
+  padding-right: 3rem;
+}
+
+.formGroupIcon i {
+  font-size: 2rem;
+  position: absolute;
+  right: 0.6rem;
+  top: 0.5rem;
+}
+
+.modalWrap {
+  align-items: center;
+  background-color: #00000060;
+  display: flex;
+  left: 0;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+}
+
+.modalInner {
+  background-color: #ffffff;
+  max-width: 50rem;
+  min-height: 16rem;
+  padding: 3rem 6rem;
+  width: 100%;
+}
+
+.defaultInner {
+  background-color: #f8f9fa;
+}
+
+.defaultMessage {
+  color: #4b4b4b;
+  text-align: center;
+}
+
+.defaultMessage .successMessageHeading {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.defaultMessage .successMessageDetails {
+  color: #4b4b4b;
+}
+
+.successInner {
+  background-color: #e7ffe7;
+}
+
+.successMessage {
+  color: #519751;
+  text-align: center;
+}
+
+.successMessage .successMessageHeading {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.successMessage .successMessageDetails {
+  color: #357035;
+}
+
+.errorInner {
+  background-color: #ffd7d7;
+}
+
+.errorMessage {
+  color: #c70d0d;
+  text-align: center;
+}
+
+.errorMessage .successMessageHeading {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.errorMessage .successMessageDetails {
+  color: #c70d0d;
+}
+
+.showModal {
+  display: flex;
+}
+
+.hideModal {
+  display: none;
+}
+
+.checkboxGroup label {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 8px;
+  text-indent: -15px;
+}
+
+.checkboxGroup input {
+  vertical-align: bottom;
+  margin: 0;
+  *overflow: hidden;
+  padding: 0;
+  position: relative;
+  top: -4px;
+  height: 13px;
+  width: 20px;
+}
+
+.transitionAnchorElement {
+  position: relative;
+}
+
+.fade-enter .pacientDetailsPanelWrap,
+.fade-enter .pacientEditDetailsWrap {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active .pacientDetailsPanelWrap,
+.fade-enter.fade-enter-active .pacientEditDetailsWrap {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-exit {
+  opacity: 0;
+  height: 0;
+}
+
+.stickyContentWrap {
+  position: sticky;
+  top: 60px;
+}

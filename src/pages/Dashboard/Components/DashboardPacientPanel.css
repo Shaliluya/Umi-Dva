@@ -1,0 +1,40 @@
+.pacientDetailsPanelWrap {
+  background-color: #ff40002a;
+}
+
+.pacientDetailsPanelWrap .pacientDetailGroup {
+  display: flex;
+  flex-flow: row;
+  padding: 2rem;
+  text-transform: capitalize;
+  justify-content: space-between;
+}
+
+.pacientDetailsPanelWrap.flatPanelWrap {
+  background: none;
+}
+
+.pacientDetailsPanelWrap.flatPanelWrap .pacientDetailGroup {
+  padding: 0;
+}
+
+.pacientDetailsPanelWrap .pacientDetailGroup .pacientDetailGroupInner {
+  display: flex;
+  flex-flow: row;
+}
+
+.pacientDetailsPanelWrap .pacientDetailItemWrap {
+  margin-right: 2rem;
+}
+
+.pacientDetailsPanelWrap .pacientDetailGroup .detailDescription {
+  color: #ff4000da;
+  font-size: 1.8rem;
+}
+
+.pacientDetailsPanelWrap .pacientDetailGroup .detailLabel {
+  color: #ff400073;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}

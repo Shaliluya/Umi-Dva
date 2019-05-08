@@ -1,0 +1,41 @@
+.pacientItem {
+  background-color: #e5f1ee;
+  color: #0d2b25;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.pacientItem:focus,
+.pacientItem:hover {
+  background-color: #cfe3de;
+}
+
+.pacientItem .pacientName {
+  text-align: left;
+}
+
+.pacientItem .itemDescription {
+  text-transform: capitalize;
+}
+
+.pacientItem .pacientDetailsWrap {
+  border-top: 0.1rem solid #87d37c;
+  display: flex;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.pacientItem .itemLabel {
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.pacientItem .itemDescription {
+  color: #006b46;
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}

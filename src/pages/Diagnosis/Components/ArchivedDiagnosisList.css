@@ -1,0 +1,76 @@
+
+.archivedDiagnosisListWrap {
+  background-color: #ff400018;
+  overflow: hidden;
+  padding: 2rem;
+  position: relative;
+}
+
+.archivedDiagnosisListWrap::after {
+  background-color: #ff4100;
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(50%) translateY(-50%) rotate(45deg);
+  height: 2.6rem;
+  width: 2.6rem;
+}
+
+.archivedDiagnosisListWrap .heading {
+  color: #ff4100;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.archivedDiagnosisListWrap .heading i {
+  color: #ff4100;
+  margin-left: 1rem;
+}
+
+.archivedDiagnosisListWrap .diagnosisList {
+  list-style-type: none;
+}
+
+.archivedDiagnosisListWrap.small .heading {
+  font-size: 1.6rem;
+}
+
+.archivedDiagnosisListWrap.small i {
+  font-size: 2.0rem;
+}
+
+.small .diagnosisList .diagnosisListItem .diagnosisListItemDetails {
+  font-size: 1.4rem;
+}
+
+.diagnosisList .diagnosisListItem {
+  background-color: #ff4100;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  transition: background-color .2s ease-in-out;
+}
+
+.diagnosisList .diagnosisListItem:focus,
+.diagnosisList .diagnosisListItem:hover {
+  background-color: #ff400073;
+}
+
+.diagnosisList .diagnosisListItem i {
+  color: #ffffff59;
+}
+
+.diagnosisList .diagnosisListItem .diagnosisListItemDetails {
+  display: flex;
+}
+
+.diagnosisList .diagnosisListItem .diagnosisDate {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
